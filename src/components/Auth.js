@@ -4,7 +4,7 @@ import Image from "../index.jpg";
 const Auth = () => (
   <div className="auth">
     <div className="logImg">
-      <img src={Image} />
+      <img src={Image} alt="lol" />
     </div>
 
     <div className="login">
