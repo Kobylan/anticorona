@@ -1,6 +1,7 @@
 import React, { Fragment } from "react";
 
-function Region() {
+function Region(state) {
+  console.log("list", state);
   return (
     <Fragment>
       <a href="#">Вернуться к списку регионов</a>
