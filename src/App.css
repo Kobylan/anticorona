@@ -1,38 +1,68 @@
-.App {
-  text-align: center;
+html,
+body {
+  height: 100%;
+  margin: 0;
+  font-family: "Oswald";
+  font-size: 1vw;
+  background: #274248;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.auth {
+  position: absolute;
+  top: 50%;
+  width: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.logImg {
+  position: absolute;
+  top: -80%;
+  width: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 15em;
+  height: 15em;
+  overflow: hidden;
+  border-radius: 50%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.logImg img {
+  width: auto;
+  height: 100%;
+  margin-left: -50px;
+}
+input[type="text"],
+input[type="password"],
+input[typr="submit"] {
+  box-sizing: border-box;
+  margin: 1em 0;
+}
+::placeholder {
+  color: #fff;
+  opacity: 1; /* Firefox */
+  font-weight: normal;
+}
+.login input {
+  font-family: "Oswald";
+  padding-left: 1em;
+  font-size: 1em;
+  background: none;
+  color: #fff;
+  width: 100%;
+  border-radius: 5px;
+  height: 3vw;
+  border: #fff 0.1em solid;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.submit input {
+  cursor: pointer;
+  font-family: "Oswald";
+  font-size: 1em;
+  color: #fff;
+  background: none;
+  width: 30%;
+  height: 2vw;
+  float: right;
+  border-radius: 5px;
+  border: #fff 0.1em solid;
 }
