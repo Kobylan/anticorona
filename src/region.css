@@ -1,0 +1,24 @@
+.table {
+  display: flex;
+  flex-flow: column nowrap;
+  margin: 0 0 3em 0;
+  overflow-x: auto;
+  width: 100vw;
+}
+
+.table-row {
+  display: flex;
+  /* flex: auto; */
+  flex-flow: row nowrap;
+}
+
+.table-row-item {
+  box-sizing: border-box;
+  box-sizing: border-box;
+  flex-grow: 1;
+  width: 100%;
+  padding: 0.8em 1.2em;
+  overflow: hidden;
+  list-style: none;
+  border: solid 1px black;
+}

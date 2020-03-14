@@ -1,9 +1,13 @@
 import React from "react";
 import "./App.css";
-import Auth from "./components/Auth";
+import RegionList from "./components/RegionList";
+import Region from "./components/Region";
+import Router from "./components/Router";
+import "../src/region.css";
+import "../src/regionlist.css";
 
 function App() {
-  return <Auth />;
+  return <Router />;
 }
 
 export default App;

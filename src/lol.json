@@ -1,0 +1,46 @@
+[
+  {
+    "number": "z032ls",
+    "archived": false,
+    "passangers": [
+      {
+        "name": "name1",
+        "surname": "surname1",
+        "patronymic": "patronymic1",
+        "birthday": "1999-01-01",
+        "iin": "998877665544",
+        "work_place": "work1",
+        "residence": "residence1",
+        "phone_number": "+7772235252",
+        "from": "Astana",
+        "to": "Almaty",
+        "create_date": "2020-03-12",
+        "contact_with_patient": false,
+        "status": "created",
+        "flight_id": 1
+      }
+    ]
+  },
+  {
+    "number": "z534lf",
+    "archived": false,
+    "passangers": [
+      {
+        "name": "name2",
+        "surname": "surname2",
+        "patronymic": "patronymic2",
+        "birthday": "1933-04-03",
+        "iin": "998237665544",
+        "work_place": "work2",
+        "residence": "residence2",
+        "phone_number": "+7772232352",
+        "from": "lol",
+        "to": "kek",
+        "create_date": "2020-03-12",
+        "contact_with_patient": false,
+        "status": "created",
+        "flight_id": 1
+      }
+    ]
+  }
+]

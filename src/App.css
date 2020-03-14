@@ -4,7 +4,7 @@ body {
   margin: 0;
   font-family: "Oswald";
   font-size: 1vw;
-  background: #274248;
+  background: #fff;
 }
 
 .auth {
@@ -16,7 +16,7 @@ body {
 }
 .logImg {
   position: absolute;
-  top: -80%;
+  top: -75%;
   width: 30%;
   left: 50%;
   transform: translate(-50%, -50%);
