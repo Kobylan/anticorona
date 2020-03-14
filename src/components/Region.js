@@ -1,11 +1,11 @@
 import React, { Fragment } from "react";
 
-function Region(state) {
-  console.log("list", state);
+function Region(newList) {
+  console.log("list", newList.location.state);
   return (
     <Fragment>
-      <a href="#">Вернуться к списку регионов</a>
-      <a href="#">Выход</a>
+      <a href="/">Вернуться к списку регионов</a>
+      <a href="/logout">Выход</a>
       <div className="table">
         <div className="table-row table-header">
           <div className="table-row-item w-30">№</div>
@@ -29,29 +29,34 @@ function Region(state) {
           <div className="table-row-item">Госпитализирован (да/нет)</div>
           <div className="table-row-item">Место госпитализации</div>
         </div>
-
-        <div className="table-row">
-          <div className="table-row-item">1</div>
-          <div className="table-row-item">01.03.2020</div>
-          <div className="table-row-item">Москва - Нур-Султан 1956</div>
-          <div className="table-row-item">Асетов Асет Асетович</div>
-          <div className="table-row-item">900101654321</div>
-          <div className="table-row-item">01.01.1990</div>
-          <div className="table-row-item">1223334</div>
-          <div className="table-row-item">РК</div>
-          <div className="table-row-item">87771112233</div>
-          <div className="table-row-item">Италия</div>
-          <div className="table-row-item">Нур-Султан</div>
-          <div className="table-row-item">
-            г. Нур-Султан, пр. Туран, 1000, кв. 1000
-          </div>
-          <div className="table-row-item">Школа Алем</div>
-          <div className="table-row-item">Да</div>
-          <div className="table-row-item">Да</div>
-          <div className="table-row-item">
-            Многопрофильный медицинский центр г. Нур-Султан
-          </div>
-        </div>
+        {newList.location.state.newList.map(key =>
+          key.map((passenger, index) => (
+            <div className="table-row" key={index}>
+              <div className="table-row-item">{index}</div>
+              <div className="table-row-item">{passenger.to}</div>
+              <div className="table-row-item">
+                {passenger.from} - {passenger.to} {passenger.flight_id}
+              </div>
+              <div className="table-row-item">
+                {passenger.name} {passenger.surname}
+              </div>
+              <div className="table-row-item">{passenger.iin}</div>
+              <div className="table-row-item">{passenger.birthday}</div>
+              <div className="table-row-item">1223334</div>
+              <div className="table-row-item">РК</div>
+              <div className="table-row-item">{passenger.phone_number}</div>
+              <div className="table-row-item">{passenger.from}</div>
+              <div className="table-row-item">{passenger.to}</div>
+              <div className="table-row-item">{passenger.residence}</div>
+              <div className="table-row-item">{passenger.work_place}</div>
+              <div className="table-row-item">Да</div>
+              <div className="table-row-item">Да</div>
+              <div className="table-row-item">
+                Многопрофильный медицинский центр г. Нур-Султан
+              </div>
+            </div>
+          ))
+        )}
       </div>
     </Fragment>
   );

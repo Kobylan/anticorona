@@ -13,17 +13,11 @@ function RegionList() {
   // }
 
   const handleLink = value => {
-    const newList = [
-      ...list,
-      data.map(fly =>
-        fly.passangers.filter(passenger => passenger.to === value)
-      )
-    ];
-    console.log("newList", newList);
+    const newList = data.map(fly =>
+      fly.passangers.filter(passenger => passenger.to === value)
+    );
     setList(newList);
-    // history.push(`/${value}`);
-    console.log("list", list);
-    // return <Region newList={newList} />;
+    history.push(`/${value}`, { newList: newList });
   };
 
   return (
@@ -36,21 +30,17 @@ function RegionList() {
       <div className="list-container">
         <h2 className="list-header">Список регионов</h2>
         <ul className="list">
-          <li className="list-element">
-            {data.map(fly =>
-              fly.passangers.map((passenger, index) => (
-                <a
-                  key={index}
-                  // href={passenger.to}
-                  value={passenger.to}
-                  onClick={() => handleLink(passenger.to)}
-                  className="region-link"
-                >
-                  {passenger.to}
-                </a>
-              ))
-            )}
-          </li>
+          {data.map(fly =>
+            fly.passangers.map((passenger, index) => (
+              <li
+                key={index}
+                onClick={() => handleLink(passenger.to)}
+                className="list-element"
+              >
+                {passenger.to}
+              </li>
+            ))
+          )}
         </ul>
       </div>
     </div>

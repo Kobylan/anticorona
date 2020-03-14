@@ -37,7 +37,7 @@
   list-style: none;
 }
 
-.region-link {
+.list-element {
   display: inline-block;
   margin-bottom: 5px;
   text-decoration: none;
@@ -46,7 +46,7 @@
   background: rgb(160, 160, 216);
 }
 
-.list-element a:hover {
+.list-element:hover {
   color: white;
   background-color: rgb(127, 127, 231);
 }
