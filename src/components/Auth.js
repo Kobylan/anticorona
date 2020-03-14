@@ -8,7 +8,7 @@ const Auth = () => (
     </div>
 
     <div className="login">
-      <input type="text" placeholder="Введите логин или email" />
+      <input type="text" placeholder="Введите логин" />
       <input type="password" placeholder="Введите пароль" />
     </div>
     <div className="submit">

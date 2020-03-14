@@ -1,22 +1,24 @@
+@import url("https://fonts.googleapis.com/css?family=Rubik&display=swap");
 html,
 body {
   height: 100%;
   margin: 0;
-  font-family: "Oswald";
+  font-family: "Rubik";
   font-size: 1vw;
-  background: #274248;
+  background: #111;
 }
 
 .auth {
   position: absolute;
   top: 50%;
   width: 30%;
+
   left: 50%;
   transform: translate(-50%, -50%);
 }
 .logImg {
   position: absolute;
-  top: -80%;
+  top: -75%;
   width: 30%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -43,20 +45,21 @@ input[typr="submit"] {
   font-weight: normal;
 }
 .login input {
-  font-family: "Oswald";
   padding-left: 1em;
+  font-family: "Rubik";
+
   font-size: 1em;
   background: none;
   color: #fff;
   width: 100%;
   border-radius: 5px;
   height: 3vw;
-  border: #fff 0.1em solid;
+  border: #007fff 0.1em solid;
 }
 
 .submit input {
   cursor: pointer;
-  font-family: "Oswald";
+  font-family: "Rubik";
   font-size: 1em;
   color: #fff;
   background: none;
@@ -64,5 +67,5 @@ input[typr="submit"] {
   height: 2vw;
   float: right;
   border-radius: 5px;
-  border: #fff 0.1em solid;
+  border: #007fff 0.1em solid;
 }
