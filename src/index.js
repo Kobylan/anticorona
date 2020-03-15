@@ -4,7 +4,7 @@ import "./index.css";
 import * as serviceWorker from "./serviceWorker";
 import App from "./App";
 
-let data = require("./lol.json");
+let data = fetch("http://10.11.1.207:4000/api/flights/1/passengers");
 
 ReactDOM.render(<App data={data} />, document.getElementById("root"));
 
