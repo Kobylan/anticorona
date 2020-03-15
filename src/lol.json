@@ -22,6 +22,28 @@
     ]
   },
   {
+    "number": "z032ldsgsd",
+    "archived": false,
+    "passangers": [
+      {
+        "name": "name2",
+        "surname": "surname2",
+        "patronymic": "patronymic2",
+        "birthday": "1998-02-02",
+        "iin": "998877665544",
+        "work_place": "work2",
+        "residence": "residence2",
+        "phone_number": "+7772235251",
+        "from": "Kokshetau",
+        "to": "Almaty",
+        "create_date": "2020-03-12",
+        "contact_with_patient": false,
+        "status": "created",
+        "flight_id": 1
+      }
+    ]
+  },
+  {
     "number": "z534lf",
     "archived": false,
     "passangers": [
