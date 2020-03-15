@@ -262,8 +262,6 @@ export default function EnhancedTable(props) {
                       <TableCell align="left">{row.from}</TableCell>
                       <TableCell align="left">{row.to}</TableCell>
                       <TableCell align="left">{row.create_date}</TableCell>
-                      <TableCell align="left">{row.carbs}</TableCell>
-                      <TableCell align="left">{row.protein}</TableCell>
                     </TableRow>
                   );
                 })}
