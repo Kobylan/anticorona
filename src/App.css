@@ -77,8 +77,11 @@ input[type="password"] {
   margin: 1em;
   border: 0.1em solid #007fff;
 }
+#nonecheckbox {
+  display: none;
+}
 
-.container th h1 {
+/* .container th h1 {
   font-weight: bold;
   font-size: 1em;
   text-align: center;
@@ -93,14 +96,7 @@ input[type="password"] {
   box-shadow: 0 2px 2px -2px #0e1119;
 }
 
-.container {
-  padding-top: 4em;
-  text-align: center;
-  overflow: hidden;
-  width: 80%;
-  margin: 0 auto;
-  display: table;
-}
+
 
 .container td,
 .container th {
@@ -109,20 +105,26 @@ input[type="password"] {
   padding-left: 2%;
 }
 
-/* Background-color of the odd rows */
 .container tr:nth-child(odd) {
   background-color: #323c50;
 }
 
-/* Background-color of the even rows */
 .container tr:nth-child(even) {
   background-color: #2c3446;
 }
-
-.container th {
-  background-color: #1f2739;
+*/
+th a {
+  color: #000;
 }
 
+.container {
+  padding-top: 4em;
+  text-align: center;
+  overflow: hidden;
+  width: 80%;
+  margin: 0 auto;
+  display: table;
+}
 a {
   text-decoration: none;
   color: #fff;

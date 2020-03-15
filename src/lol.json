@@ -21,6 +21,22 @@
         "flight_id": 1
       },
       {
+        "name": "epta",
+        "surname": "lopta",
+        "patronymic": "buka",
+        "birthday": "1999-01-01",
+        "iin": "998873265544",
+        "work_place": "herak",
+        "residence": "residence1",
+        "phone_number": "+7212235252",
+        "from": "Astana",
+        "to": "Almaty",
+        "create_date": "2020-03-12",
+        "contact_with_patient": false,
+        "status": "created",
+        "flight_id": 1
+      },
+      {
         "name": "Sayat",
         "surname": "Kodik",
         "patronymic": "Drotik",

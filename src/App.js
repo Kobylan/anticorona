@@ -11,9 +11,7 @@ function App(props) {
       <Route exact path="/" render={() => <Auth />} />
       <Route
         path="/Collaborator"
-        render={() => (
-          <Collaborator flights={props.flights} passangers={props.passangers} />
-        )}
+        render={() => <Collaborator data={props.data} />}
       />
       <Route path="/Flight/:id">
         <Flights data={props.data} />

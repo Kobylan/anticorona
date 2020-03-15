@@ -9,25 +9,8 @@ export default function Flights(props) {
       <NavLink to="/collaborator">
         <h1>Список пассажиров</h1>
       </NavLink>
-      <table className="container">
-        <thead>
-          <tr>
-            <th>
-              <h1>Имя</h1>
-            </th>
-            <th>
-              <h1>Фамилия</h1>
-            </th>
-            <th>
-              <h1>ИИН</h1>
-            </th>
-            <th>
-              <h1>Номер телефона</h1>
-            </th>
-          </tr>
-        </thead>
-        <Flight id={useParams()} data={props.data} />
-      </table>
+
+      <Flight id={useParams()} data={props.data} />
     </div>
   );
 }
