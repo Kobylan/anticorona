@@ -13,7 +13,9 @@ const Auth = () => (
       <input type="password" placeholder="Введите пароль" />
     </div>
     <div className="submit">
-      <NavLink to="/Collaborator">Войти</NavLink>
+      <NavLink to="/Collaborator">
+        <input type="submit" value="Войти" />
+      </NavLink>
     </div>
   </div>
 );

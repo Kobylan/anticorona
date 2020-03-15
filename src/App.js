@@ -4,7 +4,6 @@ import Auth from "./components/Auth";
 import { BrowserRouter, Route } from "react-router-dom";
 import Collaborator from "./components/Collaborator";
 import Flights from "./components/Flights";
-import Passangers from "./components/Passangers";
 
 function App(props) {
   return (
@@ -18,9 +17,6 @@ function App(props) {
       />
       <Route path="/Flight/:id">
         <Flights data={props.data} />
-      </Route>
-      <Route path="/Passanger/:id">
-        <Passangers data={props.data} />
       </Route>
     </BrowserRouter>
   );

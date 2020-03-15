@@ -57,7 +57,7 @@ input[type="password"] {
   border: #fff 0.1em solid;
 }
 
-.submit a {
+.submit input {
   cursor: pointer;
   font-family: "Rubik";
   font-size: 1em;
