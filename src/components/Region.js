@@ -33,12 +33,12 @@ function Region(newList) {
           key.map((passenger, index) => (
             <div className="table-row" key={index}>
               <div className="table-row-item">{index}</div>
-              <div className="table-row-item">{passenger.to}</div>
+              <div className="table-row-item">{passenger.create_date}</div>
               <div className="table-row-item">
                 {passenger.from} - {passenger.to} {passenger.flight_id}
               </div>
               <div className="table-row-item">
-                {passenger.name} {passenger.surname}
+                {passenger.name} {passenger.surname} {passenger.patronymic}
               </div>
               <div className="table-row-item">{passenger.iin}</div>
               <div className="table-row-item">{passenger.birthday}</div>
