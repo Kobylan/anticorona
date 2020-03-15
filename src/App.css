@@ -6,7 +6,7 @@ body {
   font-family: "Rubik";
   font-size: 1vw;
   color: #fff;
-  background: #111;
+  background: hsl(227.3, 29.7%, 56.5%);
 }
 
 .auth {
@@ -35,8 +35,7 @@ body {
   margin-left: -50px;
 }
 input[type="text"],
-input[type="password"],
-input[typr="submit"] {
+input[type="password"] {
   box-sizing: border-box;
   margin: 1em 0;
 }
@@ -55,10 +54,10 @@ input[typr="submit"] {
   width: 100%;
   border-radius: 5px;
   height: 3vw;
-  border: #007fff 0.1em solid;
+  border: #fff 0.1em solid;
 }
 
-.submit input {
+.submit a {
   cursor: pointer;
   font-family: "Rubik";
   font-size: 1em;
@@ -68,7 +67,9 @@ input[typr="submit"] {
   height: 2vw;
   float: right;
   border-radius: 5px;
-  border: #007fff 0.1em solid;
+  border: #fff 0.1em solid;
+
+  margin: 1em 0;
 }
 
 .flight {
@@ -81,7 +82,7 @@ input[typr="submit"] {
   font-weight: bold;
   font-size: 1em;
   text-align: center;
-  color: #185875;
+  color: #fff;
 }
 
 .container td {
@@ -93,6 +94,7 @@ input[typr="submit"] {
 }
 
 .container {
+  padding-top: 4em;
   text-align: center;
   overflow: hidden;
   width: 80%;
@@ -105,7 +107,6 @@ input[typr="submit"] {
   padding-bottom: 2%;
   padding-top: 2%;
   padding-left: 2%;
-  width: 33%;
 }
 
 /* Background-color of the odd rows */
@@ -120,4 +121,9 @@ input[typr="submit"] {
 
 .container th {
   background-color: #1f2739;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
 }

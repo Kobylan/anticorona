@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "../index.jpg";
+import { NavLink } from "react-router-dom";
 
 const Auth = () => (
   <div className="auth">
@@ -12,7 +13,7 @@ const Auth = () => (
       <input type="password" placeholder="Введите пароль" />
     </div>
     <div className="submit">
-      <input type="submit" value="Войти" />
+      <NavLink to="/Collaborator">Войти</NavLink>
     </div>
   </div>
 );

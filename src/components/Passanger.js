@@ -8,21 +8,16 @@ import {
   Route,
   NavLink
 } from "react-router-dom";
-import Passanger from "./Passanger";
 
-function Flight(props) {
+function Passanger(props) {
   let { id } = props.id;
-  let { url } = useRouteMatch();
+  console.log(id);
   let person = find(id, props.data);
 
   return (
     <tbody>
       {person.passangers.map(e => (
         <tr>
-          <td>
-            <NavLink to={"/Passanger/" + e.iin}>{e.name}</NavLink>
-          </td>
-          <td>{e.surname}</td>
           <td>{e.iin}</td>
           <td>{e.phone_number}</td>
         </tr>
@@ -32,6 +27,6 @@ function Flight(props) {
 }
 
 function find(id, data) {
-  return data.find(p => p.number === id);
+  return data.find(p => p.iin === id);
 }
-export default Flight;
+export default Passanger;
