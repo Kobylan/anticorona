@@ -4,9 +4,7 @@ import "./index.css";
 import * as serviceWorker from "./serviceWorker";
 import App from "./App";
 
-let data = fetch("http://10.11.1.207:4000/api/flights/1/passengers");
-
-ReactDOM.render(<App data={data} />, document.getElementById("root"));
+ReactDOM.render(<App />, document.getElementById("root"));
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.

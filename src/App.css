@@ -18,6 +18,13 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+.home {
+  position: absolute;
+  top: 50%;
+  width: 27%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 .logImg {
   position: absolute;
   top: -75%;
@@ -71,6 +78,9 @@ input[type="password"] {
   border: #fff 0.1em solid;
 
   margin: 1em 0;
+}
+.submit button {
+  float: right;
 }
 
 .flight {

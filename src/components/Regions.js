@@ -1,6 +1,13 @@
 import React, { useEffect } from "react";
 import MaterialTable from "material-table";
+import Cookies from "universal-cookie";
 let api = "http://10.11.1.207:4000/api/";
+let cookies = new Cookies();
+let cookie = cookies.get("auth");
+let array = cookie.split(".");
+let role = atob(array[1]);
+role = JSON.parse(role);
+console.log(role.Region);
 export default function MaterialTableDemo(props) {
   const [columns] = React.useState([
     { title: "Фамилия", field: "surname" },
@@ -23,11 +30,13 @@ export default function MaterialTableDemo(props) {
   const [passengers, setPassengers] = React.useState([]);
 
   let getData = id =>
-    fetch("http://10.11.1.207:4000/api/flights/" + id + "/passengers")
+    fetch("http://10.11.1.207:4000/api/passengers/" + id)
       .then(resp => resp.json())
       .then(resp => setPassengers(resp));
+
   useEffect(() => {
-    getData(props.id.id);
+    console.log();
+    getData();
   }, []);
 
   return (

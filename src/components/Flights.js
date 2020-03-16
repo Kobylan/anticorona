@@ -1,16 +1,14 @@
 import React from "react";
 import "../App.css";
-import { NavLink, useParams } from "react-router-dom";
-import Flight from "./Flight";
+import { useParams } from "react-router-dom";
+import PassangerTable from "./PassangerTable";
 
 export default function Flights(props) {
   return (
     <div className="container">
-      <NavLink to="/collaborator">
-        <h1>Список пассажиров</h1>
-      </NavLink>
+      <h1>Список пассажиров</h1>
 
-      <Flight id={useParams()} data={props.data} />
+      <PassangerTable id={useParams()} data={props.data} />
     </div>
   );
 }
